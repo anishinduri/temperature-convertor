@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+<body>
+    <div class="converter">
+        <h1>Temperature Converter</h1>
+        <div class="input-group">
+            <i class="fas fa-thermometer-half"></i>
+            <label for="celsius">Celsius:</label>
+            <input type="text" id="celsius" oninput="convert('celsius')">
+        </div>
+        <div class="input-group">
+            <i class="fas fa-thermometer-full"></i>
+            <label for="fahrenheit">Fahrenheit:</label>
+            <input type="text" id="fahrenheit" oninput="convert('fahrenheit')">
+        </div>
+        <div class="input-group">
+            <i class="fas fa-thermometer-three-quarters"></i>
+            <label for="kelvin">Kelvin:</label>
+            <input type="text" id="kelvin" oninput="convert('kelvin')">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
